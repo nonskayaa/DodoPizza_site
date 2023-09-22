@@ -2,25 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1835, initial-scale=1.0" />
     <title>Работа в Додо Пицце</title>
 
     <style>
       @font-face {
         font-family: "Dodo Rounded v2";
-        src: url(fonts/DodoRounded_v2-Regular.fc64161.woff2);
+        src: url("static/fonts/DodoRounded_v2-Regular.fc64161.woff2");
         font-weight: 400;
       }
 
       @font-face {
         font-family: "Dodo Rounded v2";
-        src: url("fonts/DodoRounded_v2-Medium.bc435e3.woff");
+        src: url("static/fonts/DodoRounded_v2-Medium.bc435e3.woff");
         font-weight: 500;
       }
 
       @font-face {
         font-family: "Dodo Rounded v2";
-        src: url("fonts/DodoRounded_v2-Bold.16f4a88.woff");
+        src: url("static/fonts/DodoRounded_v2-Bold.16f4a88.woff");
         font-weight: 700;
       }
 
@@ -107,12 +107,12 @@
       }
 
       .vacancies_cards_section {
+        display: flex;
+        justify-content: space-between;
         padding-top: 30px;
       }
 
       .vacancy_card {
-        display: inline-block;
-        margin-right: 3px;
         width: 206px;
         height: 268px;
         position: relative;
@@ -137,7 +137,6 @@
       }
 
       .why_people_like_dodo_section {
-        
         justify-content: space-between;
         align-items: center;
         display: flex;
@@ -208,7 +207,7 @@
       .support_section {
         padding: 80px 260px;
       }
-      
+
       .support_section h1 {
         margin: 0px 0px 24px;
         max-width: 750px;
@@ -375,13 +374,11 @@
         margin: 5px 0px;
         font-size: 22px;
         line-height: 36px;
-
       }
 
       .questions_section_left_side {
         display: inline-block;
         width: 40%;
-
       }
       .questions_section_left_side a {
         overflow: auto;
@@ -495,11 +492,15 @@
       .footer_adress {
         color: #808080;
       }
+
+      .main-container {
+        min-width: 1835px;
+      }
     </style>
   </head>
 
   <body>
-    <main>
+    <main class="main-container">
       <div class="header">
         <!-- лого Додо -->
         <div class="header__logo">
@@ -579,7 +580,7 @@
         <div class="header-right_side">
           <a href="#" class="header__form-btn">Заполнить анкету</a>
           <img
-            src="images for DodoPizza/rabota_na_ravnyx (copy).png"
+            src="static/images for DodoPizza/rabota_na_ravnyx (copy).png"
             class="header__right-img"
           />
         </div>
@@ -589,7 +590,7 @@
         <div class="everyone_is_important_section__left-side">
           <h2>Для нас важен <br />каждый</h2>
           <img
-            src="images for DodoPizza/slogan_1784115660.svg"
+            src="static/images for DodoPizza/slogan_1784115660.svg"
             class="slogan"
           />
         </div>
@@ -605,7 +606,7 @@
       <div class="video_section">
         <h2>5 личных видео-историй о Додо изнутри</h2>
         <img
-          src="images for DodoPizza/Screenshot from 2023-09-07 12-04-26.png"
+          src="static/images for DodoPizza/Screenshot from 2023-09-07 12-04-26.png"
           class="screenshot_video"
         />
       </div>
@@ -621,42 +622,42 @@
         <div class="vacancies_cards_section">
           <div class="vacancy_card">
             <img
-              src="https://rabotavdodo.ru/uploads/pos1_805a0ff652.png?imgeng=/w_206/h_268/f_webp"
+              src="static/images for DodoPizza/chelik1.png"
               class="vacancy_photo"
             />
             <p class="vacancy_btn">Курьер</p>
           </div>
           <div class="vacancy_card">
             <img
-              src="https://rabotavdodo.ru/uploads/pos3_dac3f8e2ff.png?imgeng=/w_206/h_268/f_webp"
+              src="static/images for DodoPizza/chelik2.png"
               class="vacancy_photo"
             />
             <p class="vacancy_btn">Кассир</p>
           </div>
           <div class="vacancy_card">
             <img
-              src="https://rabotavdodo.ru/uploads/pos4_305a98c676.png?imgeng=/w_206/h_268/f_webp"
+              src="static/images for DodoPizza/chelik3.png"
               class="vacancy_photo"
             />
             <p class="vacancy_btn">Пиццамейкер</p>
           </div>
           <div class="vacancy_card">
             <img
-              src="https://rabotavdodo.ru/uploads/pos2_5fa68f4d3e.png?imgeng=/w_206/h_268/f_webp"
+              src="static/images for DodoPizza/chelik4.png"
               class="vacancy_photo"
             />
             <p class="vacancy_btn">Клинер</p>
           </div>
           <div class="vacancy_card">
             <img
-              src="https://rabotavdodo.ru/uploads/story_1_94b46de958.jpg?imgeng=/w_206/h_268/f_webp"
+              src="static/images for DodoPizza/chelik5.jpg"
               class="vacancy_photo"
             />
             <p class="vacancy_btn">Менеджер</p>
           </div>
           <div class="vacancy_card">
             <img
-              src="https://rabotavdodo.ru/uploads/pos6_f9e0aff104.png?imgeng=/w_206/h_268/f_webp"
+              src="static/images for DodoPizza/chelik6.png"
               class="vacancy_photo"
             />
             <p class="vacancy_btn">Управляющий</p>
@@ -684,42 +685,42 @@
         </div>
         <div class="icons_section">
           <div class="advantage_item">
-            <img src="https://rabotavdodo.ru/uploads/like1_f2e04214ac.png" />
+            <img src="static/images for DodoPizza/icon1.png" />
             <div class="adv_text">
               <p class="first_phrase">Гибкий</p>
               <p class="second_phrase">график</p>
             </div>
           </div>
           <div class="advantage_item">
-            <img src="https://rabotavdodo.ru/uploads/like2_f8932643ba.png" />
+            <img src="static/images for DodoPizza/icon2.png" />
             <div class="adv_text">
               <p class="first_phrase">Старт</p>
               <p class="second_phrase">без опыта</p>
             </div>
           </div>
           <div class="advantage_item">
-            <img src="https://rabotavdodo.ru/uploads/like3_3aff907dbf.png" />
+            <img src="static/images for DodoPizza/icon3.png" />
             <div class="adv_text">
               <p class="first_phrase">Рядом</p>
               <p class="second_phrase">с домом</p>
             </div>
           </div>
           <div class="advantage_item">
-            <img src="https://rabotavdodo.ru/uploads/like4_119128e92f.png" />
+            <img src="static/images for DodoPizza/icon4.png" />
             <div class="adv_text">
               <p class="first_phrase">Быстрый</p>
               <p class="second_phrase">рост</p>
             </div>
           </div>
           <div class="advantage_item">
-            <img src="https://rabotavdodo.ru/uploads/like5_b734e34ece.png" />
+            <img src="static/images for DodoPizza/icon5.png" />
             <div class="adv_text">
               <p class="first_phrase">Отсутствие</p>
               <p class="second_phrase">штрафов</p>
             </div>
           </div>
           <div class="advantage_item">
-            <img src="https://rabotavdodo.ru/uploads/like6_762bbc69bd.png" />
+            <img src="static/images for DodoPizza/icon6.png" />
             <div class="adv_text">
               <p class="first_phrase">Стабильная</p>
               <p class="second_phrase">оплата</p>
@@ -739,7 +740,7 @@
           <div class="support_card" style="background-color: #c5a6cf">
             <div class="support_card_text">
               <img
-                src="https://rabotavdodo.ru/uploads/thumb_up_2x_9db44b36eb.png"
+                src="static/images for DodoPizza/thumb_up.png"
                 class="support_icon"
               />
               <h1>Уважение — основа работы в команде</h1>
@@ -758,7 +759,7 @@
           <div class="support_card" style="background-color: #ed771e">
             <div class="support_card_text">
               <img
-                src="https://rabotavdodo.ru/uploads/message_2x_a19d7f1375.png"
+                src="static/images for DodoPizza/message.png"
                 class="support_icon"
               />
               <h1>Открытость <br />во всем</h1>
@@ -776,7 +777,7 @@
           <div class="support_card" style="background-color: #efe41a">
             <div class="support_card_text">
               <img
-                src="https://rabotavdodo.ru/uploads/arrow_2x_1c546b2d11.png"
+                src="static/images for DodoPizza/arrow.png"
                 class="support_icon"
               />
               <h1>Развитие для тех, кто этого хочет</h1>
@@ -959,12 +960,12 @@
       </div>
       <div class="img_wrapper">
         <img
-          src="https://rabotavdodo.ru/uploads/googleplay_271ed894bd.png"
+          src="static/images for DodoPizza/googleplay_271ed894bd.png"
           alt="google_play"
           class="google_play"
         />
         <img
-          src="https://rabotavdodo.ru/uploads/appstore_476166ec50.svg"
+          src="static/images for DodoPizza/appstore_476166ec50.svg"
           alt="app_store"
           class="app_store"
         />
@@ -972,14 +973,14 @@
       <div class="footer__bottom-links">
         <div class="bottom-links__item">
           <img
-            src="https://rabotavdodo.ru/uploads/vk_g_a505792c5c.svg"
+            src="static/images for DodoPizza/vk_g_a505792c5c (1).svg"
             alt="vk"
           />
           <a href="https://vk.com/dodo">Вконтакте</a>
         </div>
         <div class="bottom-links__item">
           <img
-            src="https://rabotavdodo.ru/uploads/youtube_g_3930a841c3.svg"
+            src="static/images for DodoPizza/youtube_g_3930a841c3 (1).svg"
             alt="youtube"
           />
           <a href="https://www.youtube.com/dodomovie">YouTube</a>
@@ -988,7 +989,7 @@
       <div class="footer_bottom">
         <div class="footer_bottom__item">
           <img
-            src="https://rabotavdodo.ru/_nuxt/img/copy-dodo.8b410ea.svg"
+            src="static/images for DodoPizza/copy-dodo.8b410ea (1).svg"
             alt="dodo_logo"
           />
           <p>© 2023</p>
