@@ -797,10 +797,10 @@
       </div>
       <div class="fill_the_form_section">
         <h2>Заполните анкету</h2>
-        <form action="#">
+        <form action="#" enctype="multipart/form-data">
           <div class="location_section">
             <div class="select_form_section">
-              <select name="Город">
+              <select name="city">
                 <option value="Almetyevsk">Альметьевск</option>
                 <option value="Saint_Petersburg">Санкт-Петербург</option>
                 <option value="Moscow">Москва</option>
@@ -808,15 +808,15 @@
               </select>
             </div>
             <div class="select_form_section">
-              <select name="Пиццерия">
+              <select name="addressOfPizzeria">
                 <option value="Almetyevsk">Альметьевск (ул. Ленина,94)</option>
                 <option value="Corona">Тц Корона (ул.Герцена, 3в)</option>
                 <option value="Lenina">ул.Ленина 100</option>
               </select>
             </div>
             <div class="select_form_section">
-              <select name="Должность">
-                <option value="Almetyevsk">Пиццамейкер</option>
+              <select name="jobPosition">
+                <option value="Pizzamaker">Пиццамейкер</option>
                 <option value="Corona">Курьер</option>
                 <option value="Lenina">К</option>
               </select>
@@ -824,20 +824,21 @@
           </div>
 
           <div class="location_section">
-            <input type="text" class="input_text" placeholder="Имя" />
-            <input type="text" class="input_text" placeholder="Фамилия" />
+            <input type="text" class="input_text" placeholder="Имя" name="userName" />
+            <input type="text" class="input_text" placeholder="Фамилия" name="userLastName"/>
             <div class="data_phone_section">
               <input
                 type="text"
                 class="input_text"
                 placeholder="День рождения"
               />
-              <input type="text" class="input_text" placeholder="Телефон" />
+              <input type="tel" class="input_text" placeholder="Телефон" name="phoneNumber"/>
             </div>
             <input
               type="text"
               class="input_text"
               placeholder="Ссылка на соцсети"
+              name="socialMediaLink"
             />
             <p>По желанию. На случай, если не дозвонимся по телефону.</p>
           </div>
@@ -847,7 +848,7 @@
               <a href="https://rabotavdodo.ru/uploads/policy_3ac21d6f68.html"
                 >обработку персональных данных
               </a>
-              <input type="checkbox" />
+              <input type="checkbox" name="agreement"/>
               <span></span>
             </label>
             <button type="submit" class="form_btn">Отправить</button>
